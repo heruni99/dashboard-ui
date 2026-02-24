@@ -3,8 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard UI</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body></body>
+  <body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">DashUI</div>
+
+      <nav class="nav">
+        <a class="nav__link nav__link--active" href="#">Overview</a>
+        <a class="nav__link" href="#">Users</a>
+        <a class="nav__link" href="#">Orders</a>
+        <a class="nav__link" href="#">Analytics</a>
+        <a class="nav__link" href="#">Settings</a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="user">
+          <div class="user__avatar" aria-hidden="true"></div>
+          <div>
+            <p class="user__name">Your Name</p>
+            <p class="user__role">Student</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 class="page-title">Overview</h1>
+          <p class="page-subtitle">Your dashboard summary</p>
+        </div>
+
+        <div class="topbar__right">
+          <label class="search">
+            <span class="sr-only">Search</span>
+            <input type="search" placeholder="Search..." />
+          </label>
+          <button class="btn">New Report</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <section class="cards" aria-label="Statistics">
+          <article class="card">
+            <p class="card__label">Total Users</p>
+            <p class="card__value">1,248</p>
+            <p class="card__meta">+12 this week</p>
+          </article>
+          <article class="card">
+            <p class="card__label">Orders</p>
+            <p class="card__value">312</p>
+            <p class="card__meta">+18 today</p>
+          </article>
+          <article class="card">
+            <p class="card__label">Revenue</p>
+            <p class="card__value">$4,820</p>
+            <p class="card__meta">Monthly</p>
+          </article>
+          <article class="card">
+            <p class="card__label">Tickets</p>
+            <p class="card__value">14</p>
+            <p class="card__meta">Needs attention</p>
+          </article>
+        </section>
+
+        <section class="grid">
+          <section class="panel">
+            <div class="panel__head">
+              <h2 class="panel__title">Recent Activity</h2>
+              <a class="link" href="#">View all</a>
+            </div>
+
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alex</td>
+                    <td><span class="badge badge--ok">Completed</span></td>
+                    <td>$120</td>
+                    <td>Feb 24</td>
+                  </tr>
+                  <tr>
+                    <td>Maya</td>
+                    <td><span class="badge badge--warn">Pending</span></td>
+                    <td>$75</td>
+                    <td>Feb 23</td>
+                  </tr>
+                  <tr>
+                    <td>Ravi</td>
+                    <td><span class="badge badge--bad">Failed</span></td>
+                    <td>$40</td>
+                    <td>Feb 22</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel__head">
+              <h2 class="panel__title">Tasks</h2>
+              <a class="link" href="#">Add</a>
+            </div>
+
+            <ul class="tasks">
+              <li class="task">
+                <span class="task__dot task__dot--ok" aria-hidden="true"></span>
+                <div>
+                  <p class="task__title">Finish dashboard layout</p>
+                  <p class="task__meta">Due today</p>
+                </div>
+              </li>
+              <li class="task">
+                <span class="task__dot task__dot--warn" aria-hidden="true"></span>
+                <div>
+                  <p class="task__title">Make responsive version</p>
+                  <p class="task__meta">Due tomorrow</p>
+                </div>
+              </li>
+              <li class="task">
+                <span class="task__dot task__dot--bad" aria-hidden="true"></span>
+                <div>
+                  <p class="task__title">Write README + deploy</p>
+                  <p class="task__meta">Due day 3</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
