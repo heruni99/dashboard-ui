@@ -99,12 +99,17 @@ border-bottom-right-radius: var(--radius);
 }
 
 .btn {
-  border: 1px solid #222;
-  background: #222;
+  .btn{
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
   color: #fff;
-  padding: 10px 12px;
-  border-radius: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
   cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover{ filter: brightness(0.95); }
 }
 
 .content { padding-top: 16px; }
@@ -117,9 +122,11 @@ border-bottom-right-radius: var(--radius);
 }
 
 .card {
-  border: 1px solid #e7e7e7;
-  border-radius: 14px;
-  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: var(--shadow);
 }
 .card__label { margin: 0; color: #666; font-size: 13px; }
 .card__value { margin: 8px 0; font-size: 26px; font-weight: 800; }
@@ -132,9 +139,11 @@ border-bottom-right-radius: var(--radius);
 }
 
 .panel {
-  border: 1px solid #e7e7e7;
-  border-radius: 14px;
-  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: var(--shadow);
 }
 
 .panel__head {
