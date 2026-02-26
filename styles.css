@@ -200,6 +200,13 @@ body {
   font-size: 13px;
 }
 
+.card:hover, .panel:hover{
+  transform: translateY(-2px);
+}
+
+.card, .panel{
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
