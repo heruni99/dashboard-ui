@@ -70,17 +70,25 @@ body {
   border-radius: 12px;
   text-decoration: none;
   color: var(--text);
+  position: relative;
 }
 
 .nav__link:hover {
   background: var(--primary-soft);
 }
 
-.nav__link--active {
-  background: var(--primary-soft);
-  color: var(--primary);
-  font-weight: 700;
+.nav__link--active::before{
+  content:"";
+  position:absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--primary), var(--primary-2));
 }
+
 
 .user {
   display: flex;
