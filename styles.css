@@ -176,13 +176,14 @@ body {
   margin-bottom: 12px;
 }
 
-.card {
+.card, .panel{
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(124,58,237,0.10);
   border-radius: var(--radius);
   padding: var(--space-3);
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 24px rgba(31, 26, 43, 0.08);
 }
+
 .card__label {
   margin: 0;
   color: #666;
@@ -205,13 +206,6 @@ body {
   gap: 12px;
 }
 
-.panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: var(--space-3);
-  box-shadow: var(--shadow);
-}
 
 .panel__head {
   display: flex;
