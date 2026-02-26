@@ -113,7 +113,11 @@ body {
 
 .main {
   padding: var(--space-4);
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
 }
+
 .topbar {
   display: flex;
   align-items: center;
