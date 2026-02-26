@@ -144,21 +144,18 @@ body {
   border-color: rgba(124,58,237,0.35);
 }
 
-.btn {
-  .btn {
-    border: 1px solid transparent;
-    background: linear-gradient(90deg, var(--primary), var(--primary-2));
-    color: #fff;
-    padding: 10px 14px;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .btn:hover {
-    filter: brightness(0.95);
-  }
+.btn{
+  border: 0;
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 8px 16px rgba(124,58,237,0.18);
 }
+
+.btn:hover{ filter: brightness(0.97); }
 
 .content {
   padding-top: 16px;
